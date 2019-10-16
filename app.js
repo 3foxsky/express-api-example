@@ -11,7 +11,7 @@ var usersRouter = require('./routes/users');
 
 var app = express();
 
-mongoose.connect('mongodb://localhost/express-api');
+mongoose.connect('mongodb://mongodb/express-api');
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
