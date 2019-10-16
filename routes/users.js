@@ -11,7 +11,7 @@ router.get('/', function(req, res, next) {
   });
 });
 
-/* GET SINGLE USER BY ID */
+/* GET SINGLE USER BY ID*/
 router.get('/:id', function(req, res, next) {
   User.findById(req.params.id, function (err, user) {
     if (err) return next(err);
