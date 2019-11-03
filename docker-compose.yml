@@ -9,7 +9,8 @@ services:
           - 3000:3000
       volumes:
           - .:/usr/src/app
-      command: ["node_modules/nodemon/bin/nodemon.js", "-e ju,pug"]
+      environment:
+          - APP_ENV=dev
   mongodb:
       image: mongo:latest
       container_name: mongodb
