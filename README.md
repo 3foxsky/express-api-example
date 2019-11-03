@@ -10,10 +10,23 @@ To run locally:
 
 # Examples
 
+
+Add user
+
 ```
 curl -i -X POST -H "Content-Type: application/json" -d '{"email": "jonh@example.com", "password": "1234", "fullname": "awesome name", "avatar": "avatar"}' http://localhost:3000/users
 ```
 
+
+Delete user
+
 ```
 curl -X DELETE -H "Content-Type: application/json" http://localhost:3000/users/5da77d7517c28c001084c963
+```
+
+List users
+
+
+```
+curl -H "Content-Type: application/json" http://localhost:3000/users/
 ```
